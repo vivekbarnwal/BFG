@@ -1,14 +1,75 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Barter for Gadgets
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <ion-row>
+        <ion-col col-8>
+          <ion-card>
+            <ion-card-header>
+              Submit Deal
+            </ion-card-header>          
+            <ion-card-content>
+              <form >
+                  <ion-list>
+                    <ion-item>
+                        <ion-label stacked>Forum</ion-label>
+                        <!-- <ion-select [selectOptions]=“selectOptions” interface="action-sheet"> -->
+                        <ion-select interface="action-sheet">
+                          <ion-option selected="true">Hot Deals - Online</ion-option>
+                          <ion-option>Hot Deals - Store</ion-option>
+                          <ion-option>Local Deals & Offers</ion-option>
+                          <ion-option>Freebies & Contests</ion-option>
+                        </ion-select>                        
+                    </ion-item>
+                    <!-- <select>
+                      <optgroup label="Group 1">
+                        <option>Option 1.1</option>
+                      </optgroup> 
+                      <optgroup label="Group 2">
+                        <option>Option 2.1</option>
+                      </optgroup>
+                    </select> -->
+                    <ion-item>
+                      <ion-label stacked>Deal Link (optional)</ion-label>
+                      <ion-input type="text" value="" placeholder="http://example.com/link..."></ion-input>
+                    </ion-item>
+                    <ion-item>
+                      <ion-label stacked>Deal Title</ion-label>
+                      <ion-input type="text" value="" placeholder="A short clear title of the listings"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                      <ion-label stacked>Deal Description</ion-label>
+                      <ion-textarea [froalaEditor]></ion-textarea>
+                    </ion-item>
+                    <ion-item>
+                      <ion-label stacked>Deal Image</ion-label>
+                      <ion-input type="file" value=""></ion-input>
+                    </ion-item>
+                    <ion-item>
+                      <ion-label stacked>Deal Price</ion-label>
+                      <ion-input type="text" value="" placeholder="Enter Deal Price"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                      <ion-label stacked>Retail Price</ion-label>
+                      <ion-input type="text" value="" placeholder="Enter Retail Price"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                      <ion-label stacked>Percentage(%) Off</ion-label>
+                      <ion-input type="text" value="" placeholder="Enter Percentage(%) Off"></ion-input>
+                    </ion-item>
+                    <button ion-button>Post Deal</button><button ion-button color="light">Cancel</button>           
+                </ion-list>
+              </form>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col col-4>
+          <ion-card>Hello2</ion-card>
+        </ion-col>
+    </ion-row>
 </ion-content>

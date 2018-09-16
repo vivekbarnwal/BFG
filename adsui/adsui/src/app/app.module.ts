@@ -6,14 +6,20 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-
+/* import { EditorModule } from '@tinymce/tinymce-angular';
+ */
+import "froala-editor/js/froala_editor.pkgd.min.js";
+// Import Angular2 plugin.
+import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
 @NgModule({
   declarations: [
     MyApp,
     HomePage
   ],
   imports: [
+    FroalaEditorModule.forRoot(), FroalaViewModule.forRoot(),
     BrowserModule,
+    /* EditorModule, */
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

@@ -1,3 +1,14 @@
 page-home {
-
+    .remove-ok {
+        .alert-button:nth-child(2) {
+            display: none;
+        }
+    }
+    .action-sheet-group-cancel {
+        overflow: hidden;
+        -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        display: none;
+        flex-shrink: 0;
+    }
 }
